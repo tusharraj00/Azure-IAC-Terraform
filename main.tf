@@ -55,9 +55,9 @@ module "AzureFirewall" {
   depends_on = [module.ResourceGroup, module.Vnet, module.subnet, module.public_ip, module.AzureFirewallPolicy]
 }
 
-# module "BastionHost" {
-#   source                = "./Modules/BastionHost"
-#   bastionhost_variables = var.bastionhost_variables
+module "BastionHost" {
+  source                = "./Modules/BastionHost"
+  bastionhost_variables = var.bastionhost_variables
 
-#   depends_on = [ module.ResourceGroup, module.Vnet, module.public_ip, module.subnet ]
-# }
+  depends_on = [ module.ResourceGroup, module.Vnet, module.public_ip, module.subnet ]
+}

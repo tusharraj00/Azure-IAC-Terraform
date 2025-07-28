@@ -149,16 +149,16 @@ firewall_variables = {
   }
 }
 
-# bastionhost_variables = {
-#   "bastionhost" = {
-#     name                  = "BastionHost-CI"
-#     location              = "centralindia"
-#     resource_group_name = "HUB-RG-CI"
-#     sku                   = "Basic"
-#     ip_config_name        = "config-1"
-#     subnet_name           = "AzureBastionSubnet"
-#     vnet_name             = "HUB-VNET01"
-#     pip_name              = "BastionHost-PIP01"
+bastionhost_variables = {
+  "bastionhost" = {
+    name                  = "BastionHost-CI"
+    location              = "centralindia"
+    resource_group_name = "HUB-RG-CI"
+    sku                   = "Basic"
+    ip_config_name        = "config-1"
+    subnet_name           = "AzureBastionSubnet"
+    vnet_name             = "HUB-VNET01"
+    pip_name              = "BastionHost-PIP01"
 
-#   }
-# }
+  }
+}
